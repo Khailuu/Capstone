@@ -112,6 +112,27 @@ header .collapse ul li a.nav-link.active {
   color: var(--primary);
 }
 
+header .btn-outline-primary {
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  color: #dc4f72;
+  border-color: #dc4f72;
+  margin-right: 1rem;
+  transition: all .5s;
+}
+
+header .btn:first-child:hover {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+  transition: all .5s;
+}
+
 /* change-theme  */
 .theme-switch-wrapper input {
   display: none;
@@ -319,6 +340,12 @@ input:checked + .mode-container i:last-child{
   background-color: var(--primary);
 }
 
+.about .about__content .about__left .button:hover {
+  color: #fff;
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
 .about .about__content .about__right {
   padding-left: 3rem;
 }
@@ -346,6 +373,10 @@ input:checked + .mode-container i:last-child{
   border: 1px solid var(--border-color-light);
 }
 
+.about .about__number .item__content:hover {
+  box-shadow: var(--card-hover-box-shadow);
+  transition: 0.3s ease;
+}
 .about .about__number h4 {
   font-size: 16px;
   line-height: 24.5px;
@@ -417,6 +448,12 @@ input:checked + .mode-container i:last-child{
   border-color: #f8f9fa;
   transition: 0.3s ease-out;
   background-color: #f8f9fa;
+}
+
+.commit .container .commit__content .button:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
 }
 
 /* Questions  */
@@ -625,6 +662,12 @@ input:checked + .mode-container i:last-child{
   border-color: var(--primary);
 }
 
+.feature .feature__bottom .tab-content .row .feature__left .button:hover {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+}
+
 .feature .feature__bottom .tab-content .tab-pane:first-of-type .row .feature__left,
 .feature .feature__bottom .tab-content .tab-pane:last-of-type .row .feature__left {
   padding-right: 15px;
@@ -806,6 +849,12 @@ input:checked + .mode-container i:last-child{
   margin-left: 8px;
 }
 
+.community .community__content .community__button .button:last-child:hover {
+  color: #fff;
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+
 .community .community__content .community__button .button:first-child {
   display: inline-block;
   line-height: 52px;
@@ -864,6 +913,10 @@ footer .footer__link .footer__left ul li a{
   padding: 0;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+footer .footer__link .footer__left ul li a:hover {
+  color: var(--primary)
 }
 
 footer .footer__link .footer__right {
@@ -941,4 +994,53 @@ footer .copyright p {
   line-height: 22px;
   color: var(--text-color);
   font-size: 16px;
+  margin-bottom: 0;
+}
+
+footer .footerSocial ul {
+  margin-bottom: 0;
+}
+
+footer .footerSocial ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+footer .footerSocial ul li a {
+  color: var(--title-color);
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+
+footer .CopyRights a {
+  color: var(--title-color);
+  text-decoration: none;
+  transition: all .5s;
+}
+
+footer .CopyRights a:hover {
+  color: var(--primary);
+}
+
+/* backToTop  */
+#movetop {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  background: var(--primary);
+  padding: 0;
+  opacity: 0.7;
+  transition: 0.3s ease;
+  color: var(--text-color);
 }
