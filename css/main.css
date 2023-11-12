@@ -300,6 +300,7 @@ input:checked + .mode-container i:last-child{
   padding-bottom: 3rem;
   padding-top: 16px;
   padding-bottom: 64px;
+  flex-wrap: wrap;
 }
 
 .about .title {
@@ -1043,4 +1044,52 @@ footer .CopyRights a:hover {
   opacity: 0.7;
   transition: 0.3s ease;
   color: var(--text-color);
+}
+
+@media screen and (max-width: 991px) {
+  .feature .feature__bottom .tab-content .row {
+    max-width: 100%;
+}
+.feature .feature__bottom .nav-pills {
+  max-width: 100%;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .feature .feature__bottom .tab-content .row .feature__left h3 {
+    margin-bottom: 14px;
+    font-size: 26px;
+    line-height: 33px;
+
+  }
+  footer .footer__link .footer__right  {
+    padding-left:12px;
+    margin-top: 3rem;
+  }
+
+  footer .copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .footerSocial {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about .about__content .about__left,
+  .about .about__content .about__right {
+    width: 100%;
+  }
+
+  .about .about__content .about__right {
+    margin-top: 3rem;
+    padding-left: 0;
+  }
 }
