@@ -1145,13 +1145,16 @@ footer .CopyRights a:hover {
   }
   header .navbar-toggler {
     color: #fff;
-    order: 2;
+    order: 0;
   }
   header .navbar-toggler:focus {
     box-shadow: none;
   }
   header .DarkandLight {
-    order: 1;
+    /* order: 0; */
+    position: absolute;
+    right: 72px;
+    top: 21px;
   }
 
   /* Banner  */

@@ -41,4 +41,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// $(document).ready(function(){
+//   $("#navbarNavDropdown").hide();
+//   $(".trigger").click(function(){
+//     $("#navbarNavDropdown").slideToggle();
+//   })
+// })
 
