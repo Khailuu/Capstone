@@ -39,13 +39,126 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
     <!-- Main css  -->
+    <link rel="stylesheet" href="./css/customize.css">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        
+    <header id="site-header" class="main-header">
+      <div class="container w3HeaderLogoEd">
+        <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+          <h1>
+            <a class="navbar-brand" href="./index.html">
+              <i class="fa-regular fa-handshake"></i> Masterwork
+            </a>
+          </h1>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul id="primary-menu" class="navbar-nav ms-auto">
+              <li id="menu-item-20" class="nav-item active">
+                <a href="./index.html" class="nav-link active">Home</a>
+              </li>
+              <li
+                id="menu-item-26"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26 nav-item"
+              >
+                <a href="./about.html" class="nav-link">About</a>
+              </li>
+              <li
+                id="menu-item-25"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 nav-item"
+              >
+                <a href="" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu-item-23"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23 nav-item"
+              >
+                <a href="" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+            <!--/search-right-->
+            <div class="search-right HeaderSearch mr-lg-3">
+              <a href="#search" class="search-search" title="search"
+                ><span class="fa fa-search" aria-hidden="true"></span
+              ></a>
+              <!-- search popup -->
+              <div id="search" class="pop-overlay">
+                <div class="popup">
+                  <form action="" method="GET" class="search-box d-sm-flex">
+                    <input
+                      type="search"
+                      placeholder="Enter Keyword"
+                      name="s"
+                      required="required"
+                      autofocus=""
+                    />
+                    <button type="submit" class="btn">Search</button>
+                  </form>
+                  <a class="close" href="#close">×</a>
+                </div>
+              </div>
+              <!-- /search popup -->
+            </div>
+            <!--//search-right-->
+
+            <!-- Buy button -->
+            <div class="top-quote mr-lg-3 mt-lg-0 HeaderButton">
+              <a class="btn btn-outline-primary theme-button" href="#demourl">
+                Schedule a Demo</a
+              >
+            </div>
+            <!-- Buy button -->
+          </div>
+
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+        </nav>
       </div>
     </header>
     <!-- Banner  -->
@@ -120,25 +233,23 @@
     <section class="about py-5">
       <div class="container">
         <div class="about__content">
-          
-            <div class="about__left">
-              <div class="title">
-                <h6>about our company</h6>
-                <h3>The Best Choice For Your Successful Business!</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
-                  repellendus illum harum quam nihil totam reprehenderit! Ut sed
-                  eveniet quos! Asperiores officia, repudiandae similique
-                  reiciendis, ab est magnam esse nesciunt ea fuga facere
-                  voluptatem.
-                </p>
-                <a href="#about" class="btn btn-primary button"> Read More</a>
-              </div>
+          <div class="about__left">
+            <div class="title">
+              <h6>about our company</h6>
+              <h3>The Best Choice For Your Successful Business!</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+                repellendus illum harum quam nihil totam reprehenderit! Ut sed
+                eveniet quos! Asperiores officia, repudiandae similique
+                reiciendis, ab est magnam esse nesciunt ea fuga facere
+                voluptatem.
+              </p>
+              <a href="#about" class="btn btn-primary button"> Read More</a>
             </div>
-            <div class="about__right">
-              <img src="./imgs/about.jpg" alt="about" />
-            </div>
-          
+          </div>
+          <div class="about__right">
+            <img src="./imgs/about.jpg" alt="about" />
+          </div>
         </div>
         <div class="about__number">
           <div class="row justify-content-center">
@@ -162,7 +273,9 @@
                 </p>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4 number__item">
+            <div
+              class="col-xl-4 col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4 number__item"
+            >
               <div class="item__content">
                 <h4>Completed Projects</h4>
                 <p class="counter">5345</p>
@@ -289,16 +402,17 @@
     <!-- Feature -->
     <section class="feature py-5" id="projects">
       <div class="container py-lg-3">
-        <div class="header-section text-center mx-auto">
+        <div class="header-section title text-center mx-auto">
           <h6 class="sub-title">Featured Cases</h6>
-          <h3>Completed Projects </h3>
-          <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Nulla mollis dapibus nunc, ut rhoncus
-            turpis sodales quis. Integer sit amet mattis quam.</p>
+          <h3>Completed Projects</h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
         </div>
         <div class="row mt-5">
           <div class="col-lg-10 mx-auto">
-            <!--Horizontal Tab-->
             <div id="parentHorizontalTab">
               <ul class="resp-tabs-list hor_1">
                 <li>Project One</li>
@@ -312,28 +426,50 @@
                     <div class="col-md-6">
                       <h3>Why a visual identity system is more memorable</h3>
                       <p>
-                        Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus
-                        aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae
+                        perferendis dolores praesentium nulla quibusdam
+                        repellendus. consequatur minus aliquam corrupti
+                        blanditiis, necessitatibus consectetur modi ipsum natus
+                        accusantium sit pariatur.
                       </p>
-                      <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+                      <a
+                        href="#url"
+                        class="btn btn-outline-primary theme-button mt-3"
+                        >Know More</a
+                      >
                     </div>
                     <div class="col-md-6 mt-md-0 mt-5">
-                      <img src="./imgs/b4.jpg" class="img-fluid img-curve" alt="project image">
+                      <img
+                        src="./imgs/b4.jpg"
+                        class="img-fluid img-curve"
+                        alt="project image"
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="feature-content">
                   <div class="row">
                     <div class="col-md-6">
-                      <img src="./imgs/b5.jpg" class="img-fluid img-curve" alt="project image">
+                      <img
+                        src="./imgs/b5.jpg"
+                        class="img-fluid img-curve"
+                        alt="project image"
+                      />
                     </div>
                     <div class="col-md-6 mt-md-0 mt-5">
                       <h3>Make website that looks Lorem, ipsum dolor.</h3>
                       <p>
-                        Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus
-                        aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae
+                        perferendis dolores praesentium nulla quibusdam
+                        repellendus. consequatur minus aliquam corrupti
+                        blanditiis, necessitatibus consectetur modi ipsum natus
+                        accusantium sit pariatur.
                       </p>
-                      <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+                      <a
+                        href="#url"
+                        class="btn btn-outline-primary theme-button mt-3"
+                        >Know More</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -342,13 +478,24 @@
                     <div class="col-md-6">
                       <h3>Why a visual identity system is more memorable</h3>
                       <p>
-                        Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus
-                        aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae
+                        perferendis dolores praesentium nulla quibusdam
+                        repellendus. consequatur minus aliquam corrupti
+                        blanditiis, necessitatibus consectetur modi ipsum natus
+                        accusantium sit pariatur.
                       </p>
-                      <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+                      <a
+                        href="#url"
+                        class="btn btn-outline-primary theme-button mt-3"
+                        >Know More</a
+                      >
                     </div>
                     <div class="col-md-6 mt-md-0 mt-5">
-                      <img src="./imgs/b6.jpg" class="img-fluid img-curve" alt="project image">
+                      <img
+                        src="./imgs/b6.jpg"
+                        class="img-fluid img-curve"
+                        alt="project image"
+                      />
                     </div>
                   </div>
                 </div>
@@ -547,14 +694,18 @@
         <div
           class="d-flex copyright justify-content-between align-items-center pt-4 mt-5"
         >
-          <div class="columns col-xl-8 col-lg-8 col-sm-12 col-xs-12 text-lg-left">
+          <div
+            class="columns col-xl-8 col-lg-8 col-sm-12 col-xs-12 text-lg-left"
+          >
             <p class="CopyRights">
               © 2023 Masterwork. All Rights Reserved | WordPress Theme by
               <a href="https://w3layouts.com/">W3Layouts. </a>
             </p>
           </div>
 
-          <div class="columns-2 col-xl-4  col-lg-4 col-sm-12 col-xs-12 mt-lg-0 mt-3 footerSocial text-lg-end">
+          <div
+            class="columns-2 col-xl-4 col-lg-4 col-sm-12 col-xs-12 mt-lg-0 mt-3 footerSocial text-lg-end"
+          >
             <ul class="social">
               <li>
                 <a href="https://www.facebook.com/w3layouts/">
@@ -590,7 +741,12 @@
         </div>
       </div>
     </footer>
-    <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+    <button
+      onclick="topFunction()"
+      id="movetop"
+      title="Go to top"
+      style="display: block"
+    >
       <span class="fa fa-angle-up"></span>
     </button>
     <script
@@ -600,9 +756,14 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Bootstrap JavaScript Libraries -->
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
     <script
@@ -629,18 +790,19 @@
     <script type="text/javascript">
       $(document).ready(function () {
         //Horizontal Tab
-        $('#parentHorizontalTab').easyResponsiveTabs({
-          type: 'default', //Types: default, vertical, accordion
-          width: 'auto', //auto or any width like 600px
+        $("#parentHorizontalTab").easyResponsiveTabs({
+          type: "default", //Types: default, vertical, accordion
+          width: "auto", //auto or any width like 600px
           fit: true, // 100% fit in a container
-          tabidentify: 'hor_1', // The tab groups identifier
-          activate: function (event) { // Callback function if tab is switched
+          tabidentify: "hor_1", // The tab groups identifier
+          activate: function (event) {
+            // Callback function if tab is switched
             var $tab = $(this);
-            var $info = $('#nested-tabInfo');
-            var $name = $('span', $info);
+            var $info = $("#nested-tabInfo");
+            var $name = $("span", $info);
             $name.text($tab.text());
             $info.show();
-          }
+          },
         });
       });
     </script>
@@ -664,7 +826,7 @@
         },
       });
     </script>
-
+    <script></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

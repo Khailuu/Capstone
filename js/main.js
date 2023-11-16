@@ -48,3 +48,11 @@ function topFunction() {
 //   })
 // })
 
+const bar = document.querySelector('.navbar-toggler');
+
+// if(bar){
+//   bar.addEventListener("click",()=>{
+//     alert(123)
+//   })
+// }
+
