@@ -44,20 +44,7 @@ header {
     width: 0px;
     height: 2px;
     bottom: 10px;
-    left: 25px;
-}
-
-.nav-menu a:nth-child(3n + 1)::after {
-    top: 30%;
-}
-
-.nav-menu a:nth-child(3n + 2)::after {
-    top: 60%;
-
-}
-
-.nav-menu a:nth-child(3n + 3)::after {
-    top: 88%;
+    /* left: 25px; */
 }
 
 .nav-item > a:hover::before,
@@ -184,7 +171,6 @@ header .collapse button {
 
 .nav-menu {
     position: absolute;
-    width: 17rem;
     font-size: 1.6rem;
     padding-top: 16px;
     box-shadow: var(--card-box-shadow);
@@ -608,14 +594,6 @@ header .collapse button {
 .dark .colab,
 .dark .p-overlay input {
     background: #131617;
-}
-
-.dark .nav-menu {
-    width: 100%;
-}
-
-.dark .nav-menu a {
-    text-align: center;
 }
 
 .dark header .nav-menu,
