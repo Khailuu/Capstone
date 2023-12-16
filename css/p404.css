@@ -1,0 +1,119 @@
+.pagenotfound{
+    padding: 100px 0;
+}
+.pagenotfound .container .content{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.pagenotfound .container .content h1{
+    font-size: 100px;
+    color: var(--primary);
+}
+.pagenotfound .container .content h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.pagenotfound .container .content p{
+    /* padding: 0 270px; */
+}
+.pagenotfound .__searchbox{
+
+}
+.backtohome{
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+    border-color: transparent;
+    transition: all 0.5s;
+}
+.backtohome i{
+    margin-right: 10px;
+    color: var(--text-color);
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+.backtohome:hover i{
+    color: var(--primary);
+}
+.backtohome.btn.btn-info:hover{
+    color: var(--primary);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.__searchbox{
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 0 70px;
+    /* width: 500px; */
+    position: relative;
+}
+.__searchbox input{
+    /* flex: auto; */
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 110px 15px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.__searchbox input:focus{
+    box-shadow: none;
+    border-color: var(--primary);
+    
+}
+.__searchbox button{
+    padding: 18.5px 25px;
+    border-color: var(--primary);
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 70px;
+}
+
+@media screen and (max-width:992px){
+    .pagenotfound .container .content h1{
+        font-size: 70px;
+    }
+    .__searchbox input{
+        /* flex: auto; */
+        padding: 16px 110px 12px 20px;
+
+    }
+    .__searchbox button{
+        padding: 15px 20px;
+
+    }
+}
+
+@media screen and (max-width:660px){
+    .__searchbox{
+
+        padding: 0 40px;
+
+    }
+    .__searchbox button{
+        right: 40px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .__searchbox{
+
+        padding: 0 10px;
+
+    }
+    .__searchbox button{
+        right: 40px;
+        position: static;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
