@@ -1,0 +1,223 @@
+/* .owl-carousel .owl-nav.disabled{
+    display: block;
+    margin-top: 20px;
+} */
+/* a{
+    color: var(--text-color);
+} */
+/* Navigation*/
+.blogposts {
+    background-color: var(--light-bg-color);
+}
+.blogposts nav ol li{
+    padding: 20px 0 25px 0;
+}
+.blogposts nav a{
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.blogposts nav a:hover{
+    text-decoration: underline;
+}
+/* Carousel */
+.bp__carousel{
+    background-color: var(--light-bg-color);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.bp__carousel_item{
+    border-radius: 7px;
+    background-color: white;
+    
+}
+
+.bp__carousel_item .left{
+    position: relative;
+}
+
+.bp__carousel_item .left img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+._date{
+    background-color: var(--primary);
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 12px;
+}
+
+.bp__carousel_item .right{
+    padding-left: 20px ;
+}
+.bp__carousel_item .right a{
+    text-decoration: none;
+    display: block;
+}
+.right {
+    display: flex;
+    align-items: center;
+    
+}
+
+._field{
+    color: var(--primary);
+    background-color: rgba(238, 97, 120, 0.2);
+    padding: 5px 16px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+._field:hover{
+
+    color: rgb(156, 7, 32);
+}
+
+._title{
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+._title:hover{
+    color: var(--primary);
+}
+
+._readmore{
+    color: var(--primary);
+}
+._readmore:hover{
+    color: var(--primary);
+}
+._readmore i{
+    font-size: 10px;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+.bp__carousel_item:hover i{
+    transform: translateX(4px);
+}
+@media screen and (max-width:992px) {
+    .bp__carousel_item .right{
+        padding: 15px 30px;
+    }
+}
+
+.bp__carousel .owl-carousel .owl-nav button {
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: rgba(238, 97, 120, 0.2);
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: all 0.5s;
+}
+.bp__carousel .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top:160px;
+    left: 0px;
+}
+.bp__carousel .owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top:160px;
+    right: 0px;
+}
+.bp__carousel .owl-carousel .owl-nav button:hover{
+    background-color:var(--primary)
+}
+
+/* Grids */
+.bp__grids{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.col-lg-4, .col-md-6{
+    padding: 0 15px;
+    margin: 0;
+}
+.card{
+    overflow: hidden;
+    width: 100%!important;
+    /* border-color: var(--light-bg-color); */
+    transition: all 0.5s;
+    margin-bottom: 60px;
+}
+.bp__grids ._date{
+    right: 0px;
+}
+.card-body{
+    padding: 30px 20px;
+}
+.card-body .text_up{
+    border-bottom: 1px solid var(--border-color);
+}
+.card-body a{
+    text-decoration: none;
+    display: block;
+}
+
+.card-body ._title{
+    font-size: 22px;
+}
+
+.card-body ._readmore{
+    margin-top: 20px;
+}
+.card-body i{
+    margin-left: 2px;
+}
+
+.card:hover ._title{
+    color: var(--primary);
+}
+.card:hover ._readmore i{
+    transform: translateX(3px);
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.bp__pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination{
+    gap: 10px;
+}
+.pagination .page-item .page-link{
+    border-radius: 5px!important;
+    font-weight: bold;
+    color: var(--text-color) ;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px 2px #afa3a3;
+    transition: all 0.5s;
+}
+.pagination .page-item .page-link:hover{
+    color: var(--primary);
+    background-color: white;
+    border-color: var(--primary);
+    
+}
+.pagination .page-item .page-link.active {
+    color: var(--primary);
+    background-color: white;
+    border-color: var(--primary);
+}
