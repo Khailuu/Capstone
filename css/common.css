@@ -17,7 +17,8 @@ header {
   header .navbar {
     padding-bottom: 0;
   }
-  
+
+
   header .navbar .navbar-brand {
     color: var(--primary);
     font-size: 26px;
@@ -94,7 +95,6 @@ header {
   }
   
   header .navbar-toggler {
-    padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
@@ -103,14 +103,15 @@ header {
     z-index: 1000;
   }
   
-  header .navbar-toggler-icon {
+  .navbar-toggler-icon {
+    display:block;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
     content: "";
     background: no-repeat center center;
     background-size: 100% 100%;
-  }
+}
   
   header .search-right {
     align-items: center;
@@ -506,22 +507,38 @@ footer {
       color: #fff;
       order: 0;
     }
+    header .search-right,
+    header .btn-outline-primary  {
+      margin-right: 0;
+    }
+    button.navbar-toggler.collapsed .icon-expand {
+      display: block;
+  }
+  button.navbar-toggler .icon-expand {
+      display: none;
+  }
+
+  button.navbar-toggler.collapsed .icon-close {
+    display: none;
+}
+button.navbar-toggler .icon-close {
+    display: block;
+}
     header .navbar-toggler:focus {
       box-shadow: none;
     }
     header .DarkandLight {
       /* order: 0; */
       position: absolute;
-      right: 72px;
-      top: 21px;
+      right: 40px;
+      top: 11px;
     }
     .search-right {
       text-align: center;
       margin-bottom: 10px;
       display: block !important;
   }
-  
-    
+
     footer .footer__link .footer__right {
       padding-left: 12px;
       margin-top: 3rem;
@@ -570,8 +587,36 @@ footer {
       padding-right: 15px;
     }
     
+    
   }
+  @media screen and (max-width: 767px){}
+  .HeaderButton .theme-button {
+    line-height: 44px;
+    padding: 0px 20px;
+}
   
   @media screen and (max-width: 480px) {
    
   }
+
+@media only screen and (max-width: 991px){
+
+  header.nav-fixed {
+      height: auto;
+      padding: 10px 0;
+  
+  }
+
+  .navbar-toggler {
+    padding: 0rem 0rem !important;
+}
+
+  .navbar-collapse {
+    background-color: var(--bg-color);
+    width: 100%;
+  }
+
+  .HeaderButton {
+    text-align: center;
+  }
+}

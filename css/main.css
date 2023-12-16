@@ -833,6 +833,10 @@ h2.resp-accordion:first-child {
     margin-top: 3rem;
     padding-left: 0;
   }
+
+  .number__item:nth-child(2) {
+    margin-top: 24px;
+  }
 }
 
 @keyframes fadeInDown {
