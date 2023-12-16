@@ -27,7 +27,16 @@ html {
     scroll-behavior: smooth;
     line-height: 1.5;
     font-size: 62.5%;
-    margin-bottom: 24px;
+}
+
+.col-xs-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.col-xs-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
 }
 
 .pt-64 {
@@ -131,10 +140,25 @@ header {
     top: 88%;
     left: 25px;
 }
+
+.p-overlay input {
+    width: 440px;
+}
+
+.p-overlay button {
+    border: none;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.p-overlay .close {
+    right: 30px;
+}
 }
 
 @media (max-width: 991px) {
-
 .navbar-toggler {
     height: 36px;
     width: 36px;
@@ -146,7 +170,7 @@ header {
 }
 
 header {
-    height: 60px; 
+    height: 70px; 
 }
 
 header.shrink {
@@ -282,4 +306,41 @@ header .btn-outline-dark6 {
 .dark .nav-menu {
     width: 100%;
 }
+
+.p-overlay input {
+    width: 440px;
+}
+
+.p-overlay button {
+    border: none;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.p-overlay .close {
+    right: 30px;
+}
+}
+
+@media (max-width: 575px) {
+    .p-overlay input {
+        width: calc(100vw - 40px);
+        border-radius: 6px;
+    }
+
+    .p-overlay button {
+        border-radius: 6px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .p-overlay form {
+        flex-direction: column;
+    }
+
+    .p-overlay .close {
+        left: calc(100vw - 7%);
+    }
 }

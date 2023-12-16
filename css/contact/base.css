@@ -27,7 +27,6 @@ html {
     scroll-behavior: smooth;
     line-height: 1.5;
     font-size: 62.5%;
-    margin-bottom: 24px;
 }
 
 .pt-64 {
@@ -140,12 +139,33 @@ html {
         top: 88%;
         left: 25px;
     }
+
+    .p-overlay input {
+        width: 440px;
+    }
+
+    .p-overlay button {
+        border: none;
+        border-left: none;
+        border-radius: initial;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .p-overlay .close {
+            right: 30px;
+    }
     }
     
     @media (max-width: 991px) {
-    
+        
+        .help__info {
+            margin-left: 0 !important;
+            margin-right: 0 !important; 
+        }
+        
         header {
-            height: 60px; 
+            height: 70px; 
         }
     
         header.shrink {
@@ -314,8 +334,41 @@ html {
         .dark .nav-menu {
             width: 100%;
         }
+
+        .p-overlay input {
+            width: 440px;
+        }
+
+        .p-overlay button {
+            border: none;
+            border-left: none;
+            border-radius: initial;
+            border-bottom-right-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .p-overlay .close {
+            right: 30px;
+        }
     }
     
     @media (max-width: 767px) {
-    
+        .p-overlay input {
+            width: calc(100vw - 40px);
+            border-radius: 6px;
+        }
+
+        .p-overlay button {
+            border-radius: 6px;
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .p-overlay form {
+            flex-direction: column;
+        }
+
+        .p-overlay .close {
+            left: calc(100vw - 7%);
+        }
     }
