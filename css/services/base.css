@@ -156,9 +156,16 @@ header {
 .p-overlay .close {
     right: 30px;
 }
+
+.nav-item > a::before {
+    bottom: 22px;
+}
 }
 
 @media (max-width: 991px) {
+.nav-item > a::before {
+    bottom: 7px;
+}
 .navbar-toggler {
     height: 36px;
     width: 36px;
@@ -285,17 +292,17 @@ header .btn-outline-dark6 {
 }
 
 .nav-menu a:nth-child(3n + 1)::after {
-    left: 45.5%;
+    left: 46%;
     top: 45%;
 }
 
 .nav-menu a:nth-child(3n + 2)::after {
-    left: 44.1%;
+    left: 45%;
     top: 66.5%;
 }
 
 .nav-menu a:nth-child(3n + 3)::after {
-    left: 46%;
+    left: 46.5%;
     top: 88%;
 }
 

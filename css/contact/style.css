@@ -32,7 +32,6 @@ header {
     background: var(--primary);
     width: 0px;
     height: 2px;
-    bottom: 10px;
 }
 
 .nav-menu a:nth-child(3n + 1)::after,
