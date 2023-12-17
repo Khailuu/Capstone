@@ -159,6 +159,53 @@ header .navbar-toggler {
   background-size: 100% 100%;
 }
 
+.modal-title  {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.modal-header {
+  background-color: var(--bg-color);
+  border-bottom: none;
+}
+
+.modal-header button {
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+}
+
+.modal-body {
+  background-color: var(--bg-color);
+
+}
+
+.close {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.form-control {
+  padding: 15px 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  border-radius: var(--card-curve);
+  border: 1px solid var(--border-color);
+  background: var(--light-bg-color);
+  height: 55px;
+}
+
 header .search-right {
   align-items: center;
   display: inline-grid;
