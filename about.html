@@ -156,9 +156,11 @@
     </header>
     <!-- Nav  -->
     <nav id="breadcrumbs" class="breadcrumbs">
-      <div class="page-wrapper AllBreadcrumbs">
-        <a href="https://wp.w3layouts.com/masterwork" rel="nofollow">Home</a
-        >&nbsp;&nbsp;»&nbsp;&nbsp;About page
+      <div class="container">
+        <div class="page-wrapper AllBreadcrumbs">
+          <a href="https://wp.w3layouts.com/masterwork" rel="nofollow">Home</a
+          >&nbsp;&nbsp;»&nbsp;&nbsp;About page
+        </div>
       </div>
     </nav>
     <!-- About  -->
@@ -881,7 +883,25 @@
       });
     </script>
     <!-- //blog owlcarousel -->
-
+    <script>
+      window.onscroll = function () {
+    scrollFunction()
+    };
+  
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+    }
+  
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+  
+    </script>
     <!-- script for testimonials -->
     <script>
       $(document).ready(function () {

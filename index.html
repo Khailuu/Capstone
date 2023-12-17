@@ -740,14 +740,9 @@
         </div>
       </div>
     </footer>
-    <button
-    onclick="topFunction()"
-    id="movetop"
-    title="Go to top"
-    style="display: block"
-  >
-    <span class="fa fa-angle-up"></span>
-  </button>
+    <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+      <span class="fa fa-angle-up"></span>
+    </button>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -770,6 +765,25 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"
   ></script>
+  <script>
+    window.onscroll = function () {
+	scrollFunction()
+  };
+
+  function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	  document.getElementById("movetop").style.display = "block";
+	} else {
+	  document.getElementById("movetop").style.display = "none";
+	}
+  }
+
+  function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+  }
+
+  </script>
   <!-- All Template JavaScript -->
   <script src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/js/theme-change.js"></script>
   <!-- theme switch js (light and dark)-->
@@ -996,3 +1010,6 @@
     id="w3layouts-navigation-js"
   ></script>
   <script src="./js/main.js"></script>
+
+  </body>
+</html>
