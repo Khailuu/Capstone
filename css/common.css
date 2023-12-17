@@ -70,13 +70,7 @@ a.dropdown-item {
   padding-top: 0;
   padding-bottom: 14px;
 }
-header.nav-fixed {
-  padding: 0px;
-  background-color: var(--bg-color);
-  height: 70px;
-  border-bottom: none;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-}
+
 .dropdown-menu {
   border-radius: var(--card-curve);
   min-width: 11rem;
