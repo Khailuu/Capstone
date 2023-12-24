@@ -89,6 +89,11 @@
 
 .aboutus .aboutus__content .aboutus__right img {
   border-radius: var(--card-curve);
+  transition: all .3s;
+}
+
+.aboutus .aboutus__content .aboutus__right img:hover {
+    transform: translateY(-5px);
 }
 
 /* Aboutus__bottom  */

@@ -187,6 +187,11 @@
 .about .about__content .about__right img {
   width: 100%;
   border-radius: var(--card-curve);
+  transition: all .3s;
+}
+
+.about .about__content .about__right img:hover {
+  transform: translateY(-5px);
 }
 
 .about .about__number {
