@@ -629,22 +629,35 @@ footer .CopyRights a:hover {
     color: #fff;
     order: 0;
   }
+
+  header .navbar-toggler:focus-visible {
+    outline: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
   header .search-right,
   header .btn-outline-primary {
     margin-right: 0;
   }
-
-  button.navbar-toggler.collapsed .icon-expand {
-    display: block;
-}
   
-button.navbar-toggler .icon-close {
-  display: none !important;
-}
-button.navbar-toggler.collapse .icon-close {
-  display: block !important;
-}
-
+  button.navbar-toggler .icon-close {
+    display: block !important;
+  }
+  
+  button.navbar-toggler .icon-expand {
+    display: none !important;
+  }
+  
+  button.navbar-toggler.collapsed .icon-close {
+    display: none !important;
+  }
+  
+  button.navbar-toggler.collapsed .icon-expand {
+    display: block !important;
+  }
+  
+  
   header .DarkandLight {
     /* order: 0; */
     position: absolute;
@@ -760,3 +773,10 @@ header .search-right .popup form input[type="search"] {
     padding-right: 0;
   }
 }
+/* Adjust the z-index and position for header */
+header.main-header.fixed-top {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+}
+

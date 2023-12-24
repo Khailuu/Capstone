@@ -50,7 +50,26 @@
     line-height: 1;
     font-weight: 700;
   }
-  
+
+  @media screen and (max-width: 800px) {
+    .title h3 {
+      color: var(--title-color);
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 700;
+    }
+  }
+
+
+  @media screen and (max-width: 607px) {
+    .title h3 {
+      color: var(--title-color);
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 700;
+    }
+  }
+   
   .title p {
     color: var(--text-color);
     font-size: 16px;

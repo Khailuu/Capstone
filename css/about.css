@@ -24,6 +24,22 @@
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 800px) {
+    .aboutus .aboutus__title h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 667px) {
+    .aboutus .aboutus__title h2{
+        font-size: 36px;
+    }
+}
+
+#breadcrumbs {
+    margin-top: 90px;
+}
+
+
 .aboutus .aboutus__content .aboutus__left h3 {
     font-size: 36px;
     line-height: 44px;
@@ -409,6 +425,47 @@ button, [type="button"], [type="reset"], [type="submit"] {
     }
 }
 
+
+@media screen and (max-width: 575px) {
+    .feature .bg__item:nth-child(2) {
+        margin-top: 48px;
+    }
+    .team .bg__item:nth-child(2){
+        margin-top: 24px;
+        padding-top: 8px;
+    }
+
+}
+
+@media screen and (min-width: 991px) {
+    header .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #breadcrumbs .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .aboutus .container {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
+
+
+
+    .customer .container {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
+
+    footer .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .aboutus .aboutus__content .aboutus__right {
         padding-left: 15px;
@@ -424,15 +481,42 @@ button, [type="button"], [type="reset"], [type="submit"] {
         margin-top: 24px;
         padding-top: 8px;
     }
+
+#breadcrumbs {
+    margin-top: 68px;
+}
+
+
+#breadcrumbs .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.aboutus .container {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+
+.customer .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+footer .container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .aboutus .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
     
 }
 
-@media screen and (max-width: 575px) {
-    .feature .bg__item:nth-child(2) {
-        margin-top: 48px;
-    }
-    .team .bg__item:nth-child(2){
-        margin-top: 24px;
-        padding-top: 8px;
-    }
+@media screen and (max-width: 667px) {
+    
 }

@@ -54,14 +54,23 @@
             </a>
           </h1>
 
-          <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="true" aria-label="Toggle Navigation">
+          <button
+            class="navbar-toggler bg-gradient collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+          >
             <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
             <span class="navbar-toggler-icon fa icon-close fa-times"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul id="primary-menu" class="navbar-nav ms-auto">
               <li id="menu-item-20" class="nav-item active">
-                <a href="./index.html" class="nav-link ">Home</a>
+                <a href="./index.html" class="nav-link">Home</a>
               </li>
               <li
                 id="menu-item-26"
@@ -87,8 +96,16 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./blogposts.html">Blog Posts</a></li>
-                  <li><a class="dropdown-item" href="./landingpage.html">Landing Page</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./blogposts.html"
+                      >Blog Posts</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./landingpage.html"
+                      >Landing Page</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item" href="./p404.html">404 Page</a>
                   </li>
@@ -98,7 +115,7 @@
                 id="menu-item-23"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23 nav-item"
               >
-                <a href="" class="nav-link">Contact</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
 
@@ -834,6 +851,25 @@
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        var $iconExpand = $(".icon-expand");
+        var $iconClose = $(".icon-close");
+
+        $(".navbar-toggler").on("click", function () {
+          if ($iconExpand.is(":visible")) {
+            // Thanhh điều hướng được thu gọn, hiển thị biểu tượng đóng
+            $iconExpand.hide();
+            $iconClose.show();
+          } else {
+            // Thanh điều hướng được mở rộng, hiển thị biểu tượng menu
+            $iconExpand.show();
+            $iconClose.hide();
+          }
+        });
+      });
+    </script>
     <!-- All Template JavaScript -->
     <script src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/js/theme-change.js"></script>
     <!-- theme switch js (light and dark)-->
